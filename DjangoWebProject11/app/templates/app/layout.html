@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>HW27.04</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            padding: 15px;
+        }
+
+            header a {
+                color: white;
+                margin-right: 15px;
+                text-decoration: none;
+            }
+
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="/">Головна</a>
+        <a href="/news/">Новини</a>
+        <a href="/management/">Керівництво</a>
+        <a href="/about/">Про компанію</a>
+        <a href="/contacts/">Контакти</a>
+    </header>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
