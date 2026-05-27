@@ -2,6 +2,28 @@
 
 {% block content %}
 <h1>Контакти</h1>
-<p>Email: info@company.com</p>
-<p>Телефон: +380 00 000 00 00</p>
+
+<div class="contacts-grid">
+    <div>
+        <h2>Офіс у Києві</h2>
+        <p>вул. Хрещатик, 10</p>
+        <p>Телефон: +380 (44) 123-45-67</p>
+        <p>Email: info@techvision.com</p>
+    </div>
+    <div>
+        <h2>Зворотній звʼязок</h2>
+        <form class="contact-form">
+            <label>Імʼя</label>
+            <input type="text" placeholder="Ваше імʼя">
+
+            <label>Email</label>
+            <input type="email" placeholder="you@example.com">
+
+            <label>Повідомлення</label>
+            <textarea rows="4" placeholder="Ваше повідомлення"></textarea>
+
+            <button type="submit" class="btn-primary">Надіслати</button>
+        </form>
+    </div>
+</div>
 {% endblock %}

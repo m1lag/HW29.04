@@ -45,6 +45,13 @@
     <Compile Include="DjangoWebProject11\settings.py" />
     <Compile Include="DjangoWebProject11\urls.py" />
     <Compile Include="DjangoWebProject11\wsgi.py" />
+    <Compile Include="news\admin.py" />
+    <Compile Include="news\apps.py" />
+    <Compile Include="news\models.py" />
+    <Compile Include="news\tests.py" />
+    <Compile Include="news\urls.py" />
+    <Compile Include="news\views.py" />
+    <Compile Include="news\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -53,14 +60,20 @@
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />
     <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\css\" />
     <Folder Include="app\static\app\scripts\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="DjangoWebProject11\" />
+    <Folder Include="news\" />
+    <Folder Include="news\templates\" />
+    <Folder Include="news\templates\news\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\static\app\css\style.css" />
     <Content Include="app\templates\app\management.html" />
     <Content Include="app\templates\app\news.html" />
+    <Content Include="news\templates\news\news_list.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

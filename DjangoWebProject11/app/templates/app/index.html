@@ -1,6 +1,18 @@
 {% extends 'app/layout.html' %}
 
 {% block content %}
-<h1>Головна сторінка</h1>
-<p>Ласкаво просимо на сайт нашої компанії.</p>
+<section class="hero">
+    <h1>{{ company_name }}</h1>
+    <p class="slogan">{{ slogan }}</p>
+    <a href="/contacts/" class="btn-primary">Звʼязатися з нами</a>
+</section>
+
+<section class="features">
+    <h2>Що ми пропонуємо</h2>
+    <ul>
+        {% for f in features %}
+        <li>{{ f }}</li>
+        {% endfor %}
+    </ul>
+</section>
 {% endblock %}

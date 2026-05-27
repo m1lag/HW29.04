@@ -1,0 +1,17 @@
+{% extends 'app/layout.html' %}
+
+{% block content %}
+<h1>Новини компанії</h1>
+
+<div class="news-list">
+    {% for item in news_list %}
+    <article class="news-item">
+        <h2>{{ item.title }}</h2>
+        <p class="news-date">{{ item.date }}</p>
+        <p>{{ item.summary }}</p>
+    </article>
+    {% empty %}
+    <p>Поки що немає новин.</p>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -2,5 +2,23 @@
 
 {% block content %}
 <h1>Керівництво компанії</h1>
-<p>Інформація про керівників компанії.</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Імʼя</th>
+            <th>Посада</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for m in managers %}
+        <tr>
+            <td>{{ m.name }}</td>
+            <td>{{ m.position }}</td>
+            <td><a href="mailto:{{ m.email }}">{{ m.email }}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 {% endblock %}

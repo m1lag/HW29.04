@@ -1,44 +1,31 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>HW27.04</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background: #333;
-            padding: 15px;
-        }
-
-            header a {
-                color: white;
-                margin-right: 15px;
-                text-decoration: none;
-            }
-
-        .container {
-            padding: 20px;
-        }
-    </style>
+    <title>{{ title|default:"TechVision" }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 
-    <header>
-        <a href="/">Головна</a>
-        <a href="/news/">Новини</a>
-        <a href="/management/">Керівництво</a>
-        <a href="/about/">Про компанію</a>
-        <a href="/contacts/">Контакти</a>
+    <header class="site-header">
+        <div class="logo">TechVision</div>
+        <nav class="main-nav">
+            <a href="/">Головна</a>
+            <a href="/news/">Новини</a>
+            <a href="/management/">Керівництво</a>
+            <a href="/about/">Про компанію</a>
+            <a href="/contacts/">Контакти</a>
+        </nav>
     </header>
 
-    <div class="container">
+    <main class="content">
         {% block content %}{% endblock %}
-    </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 TechVision. Усі права захищені.</p>
+    </footer>
 
 </body>
 </html>
