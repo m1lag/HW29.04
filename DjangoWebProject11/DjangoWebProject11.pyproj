@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\static\app\css\style.css" />
+    <Content Include="app\templates\app\404.html" />
     <Content Include="app\templates\app\management.html" />
     <Content Include="app\templates\app\news.html" />
     <Content Include="news\templates\news\news_list.html" />

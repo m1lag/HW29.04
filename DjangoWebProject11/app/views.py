@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 def index(request):
     return render(request, 'app/index.html')
 
@@ -13,3 +14,6 @@ def about(request):
 
 def contacts(request):
     return render(request, 'app/contacts.html')
+
+def custom_404(request, exception):
+    return render(request, 'app/404.html', status=404)
